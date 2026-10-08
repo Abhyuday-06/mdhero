@@ -4,7 +4,7 @@ import { open } from "@tauri-apps/plugin-dialog";
 const invoke = vi.fn();
 const documentSet = vi.fn();
 const updateTabContent = vi.fn();
-const addTab = vi.fn(() => "tab-1");
+const addTab = vi.fn((_path: string) => "tab-1");
 const rebindPath = vi.fn();
 let activeTab: { filePath: string } | null = null;
 
